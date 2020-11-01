@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints="Username or email address"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:padding="50px"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#40E0D0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nickNameTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:hint="Nickname"
+            android:padding="50px"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#40E0D0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/error_appearance"
+        app:hintEnabled="false"
+        app:passwordToggleContentDescription="Show Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#40E0D0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="50px"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#40E0D0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:background="@drawable/btn_design"
+        android:padding="30px"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="50px"
+        android:text="Already have an account"
+        android:textColor="#40E0D0"
+        android:textSize="18sp" />
+
+</LinearLayout>

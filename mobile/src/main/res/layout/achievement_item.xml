@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="#E10A0A">
+
+    <TextView
+        android:id="@+id/achievementTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Title"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/medal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/achievementTitle"
+        android:layout_alignStart="@+id/achievementTitle"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/bronze_medal" />
+
+    <TextView
+        android:id="@+id/achievementDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/medal"
+        android:layout_alignBottom="@+id/medal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/rewardLabel"
+        android:layout_toEndOf="@+id/medal"
+        android:text="Description"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/rewardLabel"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/achievementDescription"
+        android:layout_alignEnd="@+id/achievementTitle"
+        android:text="Reward:"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/rewardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rewardLabel"
+        android:layout_alignStart="@+id/rewardLabel"
+        android:layout_alignEnd="@id/rewardLabel"
+        android:layout_alignBottom="@+id/achievementDescription"
+        android:gravity="center|start"
+        android:text="0"
+        android:textColor="#fff" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medal"
+        android:layout_alignStart="@+id/medal"
+        android:layout_alignEnd="@id/rewardLabel"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/claimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_design"
+        android:text="Claim"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:paddingTop="@dimen/screen_percentage_15">
+
+    <TextView
+        android:id="@+id/stepsRecordsTitleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Your steps records"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepsRecordsTitleLabel"
+        android:spinnerMode="dropdown"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#40E0D0" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/spinner1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="#fff">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <TextView
+        android:id="@+id/recordsCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Total records: 10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <ListView
+        android:id="@+id/stepsRecordsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recordsCountTextView"
+        android:layout_weight="1"
+        android:divider="@null"></ListView>
+
+</RelativeLayout>
+
+
+
+
+

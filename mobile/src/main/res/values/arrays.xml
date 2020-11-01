@@ -1,0 +1,48 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <string-array name="entry_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="auto_play_entries">
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Theme 1</item>
+        <item>Theme 2</item>
+    </string-array>
+
+
+    <string-array name="records_filter">
+        <item>All the time</item>
+        <item>Week</item>
+        <item>Fortnight</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+    <string-array name="records_leaderboard_filter">
+        <item>Any</item>
+        <item>Sedentary Lifestyle (0-5000)</item>
+        <item>Low Active (5000-7499)</item>
+        <item>Somewhat Active (7500-9999)</item>
+        <item>Active (10000-12499)</item>
+        <item>Highly active (12500+)</item>
+    </string-array>
+
+
+
+</resources>
